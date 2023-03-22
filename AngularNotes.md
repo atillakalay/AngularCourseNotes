@@ -30,11 +30,11 @@ Angular, büyük ve karmaşık uygulamaların geliştirilmesi için uygun bir ar
 
 # *Single Page Application Nedir?*
 
-        *Single Page Application (SPA), bir web uygulaması tipidir. Kullanıcıların sayfalar arasında gezinmesine gerek kalmadan, tek bir sayfa içerisinde uygulamanın tüm fonksiyonlarına erişmesini sağlar.*
+Single Page Application (SPA), bir web uygulaması tipidir. Kullanıcıların sayfalar arasında gezinmesine gerek kalmadan, tek bir sayfa içerisinde uygulamanın tüm fonksiyonlarına erişmesini sağlar.*
 
-        *SPA, geleneksel çok sayfalı web uygulamalarına göre daha hızlı ve kullanımı daha kolaydır. SPA'lar, kullanıcı tarafından yapılan etkileşimler sonucunda sadece gerekli olan verileri veya bileşenleri yükleyerek sayfa yenilemesine gerek kalmadan içeriklerin güncellenmesini sağlar.*
+SPA, geleneksel çok sayfalı web uygulamalarına göre daha hızlı ve kullanımı daha kolaydır. SPA'lar, kullanıcı tarafından yapılan etkileşimler sonucunda sadece gerekli olan verileri veya bileşenleri yükleyerek sayfa yenilemesine gerek kalmadan içeriklerin güncellenmesini sağlar.*
 
-        *SPA'lar genellikle JavaScript framework'leri ile geliştirilir ve bu framework'lerin sağladığı veri bağlama (data binding) ve yönlendirme (routing) özellikleri ile uygulamaların geliştirilmesi kolaylaştırılır.*
+SPA'lar genellikle JavaScript framework'leri ile geliştirilir ve bu framework'lerin sağladığı veri bağlama (data binding) ve yönlendirme (routing) özellikleri ile uygulamaların geliştirilmesi kolaylaştırılır.*
 
 *SPA'ların avantajları şunlardır:*
 
@@ -51,13 +51,13 @@ Angular, büyük ve karmaşık uygulamaların geliştirilmesi için uygun bir ar
 
 # *Node.js Nedir?*
 
-        *Node.js, Chrome V8 JavaScript motoru üzerine kurulmuş bir JavaScript runtime ortamıdır. Node.js, server-side (sunucu tarafı) JavaScript çalıştırabilen açık kaynaklı bir platformdur.*
+Node.js, Chrome V8 JavaScript motoru üzerine kurulmuş bir JavaScript runtime ortamıdır. Node.js, server-side (sunucu tarafı) JavaScript çalıştırabilen açık kaynaklı bir platformdur.*
 
-        *Node.js, JavaScript dilini kullanarak hızlı ve ölçeklenebilir web uygulamaları geliştirilmesine olanak sağlar. Node.js, JavaScript'in yaygın kullanımına olanak sağladığı için, web tarayıcılarındaki JavaScript koduyla benzer bir şekilde çalıştırılabildiği için, sunucu tarafındaki uygulamaları da JavaScript kullanarak geliştirme fırsatı sunar.*
+Node.js, JavaScript dilini kullanarak hızlı ve ölçeklenebilir web uygulamaları geliştirilmesine olanak sağlar. Node.js, JavaScript'in yaygın kullanımına olanak sağladığı için, web tarayıcılarındaki JavaScript koduyla benzer bir şekilde çalıştırılabildiği için, sunucu tarafındaki uygulamaları da JavaScript kullanarak geliştirme fırsatı sunar.*
 
-        *Node.js, asenkron (non-blocking) I/O işlemleri ile çalıştığından, web uygulamalarının hızını arttırır. Ayrıca, Node.js, modüler bir yapıya sahiptir ve özellikle hızlı ve ölçeklenebilir web uygulamaları için tasarlanmıştır.*
+Node.js, asenkron (non-blocking) I/O işlemleri ile çalıştığından, web uygulamalarının hızını arttırır. Ayrıca, Node.js, modüler bir yapıya sahiptir ve özellikle hızlı ve ölçeklenebilir web uygulamaları için tasarlanmıştır.*
 
-        *Node.js, birçok farklı alanda kullanılmaktadır. Örneğin, web uygulamaları, arka uç uygulamaları, oyun sunucuları, akışlı uygulamalar, API'ler ve IoT (Nesnelerin İnterneti) cihazları için kullanılabilir.*
+Node.js, birçok farklı alanda kullanılmaktadır. Örneğin, web uygulamaları, arka uç uygulamaları, oyun sunucuları, akışlı uygulamalar, API'ler ve IoT (Nesnelerin İnterneti) cihazları için kullanılabilir.*
 
 *Node.js'in avantajları şunlardır:*
 
@@ -75,19 +75,19 @@ Angular, büyük ve karmaşık uygulamaların geliştirilmesi için uygun bir ar
 
 # *Angular CLI Nedir?*
 
-        *Angular CLI (Command Line Interface), Angular uygulamaları için bir komut satırı arayüzüdür. Angular CLI, Angular uygulamalarının hızlı bir şekilde oluşturulmasını, yapılandırılmasını ve dağıtılmasını kolaylaştırır. Bu araç, kullanıcıların Angular uygulamalarını sıfırdan başlatmak yerine hazır bir şablon kullanarak hızlı bir şekilde oluşturmasına olanak sağlar.*
+Angular CLI (Command Line Interface), Angular uygulamaları için bir komut satırı arayüzüdür. Angular CLI, Angular uygulamalarının hızlı bir şekilde oluşturulmasını, yapılandırılmasını ve dağıtılmasını kolaylaştırır. Bu araç, kullanıcıların Angular uygulamalarını sıfırdan başlatmak yerine hazır bir şablon kullanarak hızlı bir şekilde oluşturmasına olanak sağlar.*
 
-        *Angular CLI, kullanıcıların Angular projesi için birçok işlemi otomatikleştirmesine olanak sağlar. Bu işlemler arasında, proje yapısının oluşturulması, dosya oluşturulması, paketlerin yüklenmesi, testlerin çalıştırılması, uygulamanın derlenmesi ve uygulamanın sunucuya yüklenmesi gibi işlemler bulunur.*
+Angular CLI, kullanıcıların Angular projesi için birçok işlemi otomatikleştirmesine olanak sağlar. Bu işlemler arasında, proje yapısının oluşturulması, dosya oluşturulması, paketlerin yüklenmesi, testlerin çalıştırılması, uygulamanın derlenmesi ve uygulamanın sunucuya yüklenmesi gibi işlemler bulunur.*
 
-        *Angular CLI ayrıca, Angular uygulamalarını oluşturmak ve yönetmek için kullanılan birçok komut sunar. Örneğin, "ng new" komutu yeni bir Angular projesi oluştururken, "ng serve" komutu geliştirme sunucusunu başlatır. "ng test" komutu, Angular uygulaması için testleri çalıştırmak için kullanılır.*
+Angular CLI ayrıca, Angular uygulamalarını oluşturmak ve yönetmek için kullanılan birçok komut sunar. Örneğin, "ng new" komutu yeni bir Angular projesi oluştururken, "ng serve" komutu geliştirme sunucusunu başlatır. "ng test" komutu, Angular uygulaması için testleri çalıştırmak için kullanılır.*
 
-        *Angular CLI, Angular uygulamalarının geliştirilmesi ve yönetilmesinde büyük bir kolaylık sağlar. Bu araç, geliştirme sürecinde zaman kazandırır ve uygulamanın yapılandırılması ve dağıtılması işlemlerini daha hızlı ve kolay hale getirir.*
+Angular CLI, Angular uygulamalarının geliştirilmesi ve yönetilmesinde büyük bir kolaylık sağlar. Bu araç, geliştirme sürecinde zaman kazandırır ve uygulamanın yapılandırılması ve dağıtılması işlemlerini daha hızlı ve kolay hale getirir.*
 
 # *TypeScript Nedir?*
 
-        *TypeScript, Microsoft tarafından geliştirilmiş, açık kaynak kodlu bir programlama dilidir. TypeScript, JavaScript dilinin bir üst kümesidir ve JavaScript ile aynı söz dizimi ve yapısına sahiptir. Ancak, TypeScript, JavaScript'in özelliklerine ek olarak, statik tür atamaları, sınıflar, arayüzler ve nesne yönelimli programlama özellikleri gibi bir dizi ek özellik sunar.*
+TypeScript, Microsoft tarafından geliştirilmiş, açık kaynak kodlu bir programlama dilidir. TypeScript, JavaScript dilinin bir üst kümesidir ve JavaScript ile aynı söz dizimi ve yapısına sahiptir. Ancak, TypeScript, JavaScript'in özelliklerine ek olarak, statik tür atamaları, sınıflar, arayüzler ve nesne yönelimli programlama özellikleri gibi bir dizi ek özellik sunar.*
 
-        *TypeScript, JavaScript kodunun okunabilirliğini artırır ve daha büyük ölçekli projelerde daha güvenli ve daha kolay bir kod yazımı sağlar. Bu özellikleri sayesinde, özellikle büyük ekipler tarafından geliştirilen ve ölçeklenebilir projelerde kullanılan web uygulamalarının geliştirilmesinde popüler bir dil haline gelmiştir.*
+TypeScript, JavaScript kodunun okunabilirliğini artırır ve daha büyük ölçekli projelerde daha güvenli ve daha kolay bir kod yazımı sağlar. Bu özellikleri sayesinde, özellikle büyük ekipler tarafından geliştirilen ve ölçeklenebilir projelerde kullanılan web uygulamalarının geliştirilmesinde popüler bir dil haline gelmiştir.*
 
 *TypeScript'in avantajları şunlardır:*
 
@@ -105,9 +105,9 @@ Angular, büyük ve karmaşık uygulamaların geliştirilmesi için uygun bir ar
 
 # *Angular da Interface Kullanımı*
 
-        Angular, TypeScript dili üzerine inşa edilmiş bir web framework'üdür. TypeScript, nesne yönelimli programlama (OOP) özelliklerine sahip bir dildir ve bunun bir parçası olarak, arayüzler (interfaces) kullanımı önemli bir yer tutar. Angular, bu arayüzlerin kullanımını teşvik eder ve uygulamanın yapılandırılmasına yardımcı olur.
+Angular, TypeScript dili üzerine inşa edilmiş bir web framework'üdür. TypeScript, nesne yönelimli programlama (OOP) özelliklerine sahip bir dildir ve bunun bir parçası olarak, arayüzler (interfaces) kullanımı önemli bir yer tutar. Angular, bu arayüzlerin kullanımını teşvik eder ve uygulamanın yapılandırılmasına yardımcı olur.
 
-        Angular uygulamaları genellikle bileşenlere (component) ve hizmetlere (service) ayrılmıştır. Bu bileşenler ve hizmetler, arayüzlerle belirlenmiş bir dizi özelliği (property) ve işlevi (method) içerir. Arayüzler, bu özellikleri ve işlevleri tanımlamak için kullanılır ve kodun okunabilirliğini ve yeniden kullanılabilirliğini artırır.
+Angular uygulamaları genellikle bileşenlere (component) ve hizmetlere (service) ayrılmıştır. Bu bileşenler ve hizmetler, arayüzlerle belirlenmiş bir dizi özelliği (property) ve işlevi (method) içerir. Arayüzler, bu özellikleri ve işlevleri tanımlamak için kullanılır ve kodun okunabilirliğini ve yeniden kullanılabilirliğini artırır.
 
 *Örneğin, aşağıdaki örnek bir arayüz tanımıdır:*
 
@@ -120,9 +120,9 @@ interface User {
 }
 ```
 
-        *Bu arayüz, "User" adlı bir nesne türünü tanımlar. Bu nesne, "id", "name" ve "email" adlı zorunlu özelliklere sahiptir ve "age" adlı isteğe bağlı bir özellik içerebilir.*
+Bu arayüz, "User" adlı bir nesne türünü tanımlar. Bu nesne, "id", "name" ve "email" adlı zorunlu özelliklere sahiptir ve "age" adlı isteğe bağlı bir özellik içerebilir.*
 
-        *Bu arayüz, bir bileşen veya hizmet tarafından kullanılabilir. Örneğin, aşağıdaki örnek bileşen, "User" arayüzünü kullanarak bir kullanıcı listesini görüntüler:*
+Bu arayüz, bir bileşen veya hizmet tarafından kullanılabilir. Örneğin, aşağıdaki örnek bileşen, "User" arayüzünü kullanarak bir kullanıcı listesini görüntüler:*
 
 ```jsx
 import { Component } from '@angular/core';
