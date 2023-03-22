@@ -2,13 +2,13 @@
 
 # *Angular Nedir?*
 
-        *Angular, Google tarafından geliştirilen açık kaynaklı bir JavaScript framework'üdür. Web uygulamaları oluşturmak için kullanılan bir araçtır ve Model-View-Controller (MVC) tasarım desenini kullanır.*
+Angular, Google tarafından geliştirilen açık kaynaklı bir JavaScript framework'üdür. Web uygulamaları oluşturmak için kullanılan bir araçtır ve Model-View-Controller (MVC) tasarım desenini kullanır.*
 
-        *Angular, uygulamaların modüler ve ölçeklenebilir olmasını sağlar. Özellikle tek sayfa uygulamaları (Single Page Application) geliştirme konusunda güçlü bir araçtır ve birçok büyük şirket tarafından kullanılmaktadır.*
+Angular, uygulamaların modüler ve ölçeklenebilir olmasını sağlar. Özellikle tek sayfa uygulamaları (Single Page Application) geliştirme konusunda güçlü bir araçtır ve birçok büyük şirket tarafından kullanılmaktadır.*
 
-        *Angular, HTML, CSS ve JavaScript kullanarak uygulama geliştirmeyi kolaylaştırmak için bir dizi özellik ve bileşenler sağlar. Bu özellikler arasında veri bağlama (data binding), dependency injection, routing, form kontrolü ve animasyonlar gibi özellikler bulunur.*
+Angular, HTML, CSS ve JavaScript kullanarak uygulama geliştirmeyi kolaylaştırmak için bir dizi özellik ve bileşenler sağlar. Bu özellikler arasında veri bağlama (data binding), dependency injection, routing, form kontrolü ve animasyonlar gibi özellikler bulunur.*
 
-        *Angular, büyük ve karmaşık uygulamaların geliştirilmesi için uygun bir araçtır ve geliştiricilerin üretkenliğini artırmak için birçok araç sağlar.*
+Angular, büyük ve karmaşık uygulamaların geliştirilmesi için uygun bir araçtır ve geliştiricilerin üretkenliğini artırmak için birçok araç sağlar.*
 
 # *Angular’ ın Avantajları ve Dezavantajları Nelerdir?*
 
