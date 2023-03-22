@@ -2,13 +2,13 @@
 
 # *Angular Nedir?*
 
-Angular, Google tarafından geliştirilen açık kaynaklı bir JavaScript framework'üdür. Web uygulamaları oluşturmak için kullanılan bir araçtır ve Model-View-Controller (MVC) tasarım desenini kullanır.*
+Angular, Google tarafından geliştirilen açık kaynaklı bir JavaScript framework'üdür. Web uygulamaları oluşturmak için kullanılan bir araçtır ve Model-View-Controller (MVC) tasarım desenini kullanır.
 
-Angular, uygulamaların modüler ve ölçeklenebilir olmasını sağlar. Özellikle tek sayfa uygulamaları (Single Page Application) geliştirme konusunda güçlü bir araçtır ve birçok büyük şirket tarafından kullanılmaktadır.*
+Angular, uygulamaların modüler ve ölçeklenebilir olmasını sağlar. Özellikle tek sayfa uygulamaları (Single Page Application) geliştirme konusunda güçlü bir araçtır ve birçok büyük şirket tarafından kullanılmaktadır.
 
-Angular, HTML, CSS ve JavaScript kullanarak uygulama geliştirmeyi kolaylaştırmak için bir dizi özellik ve bileşenler sağlar. Bu özellikler arasında veri bağlama (data binding), dependency injection, routing, form kontrolü ve animasyonlar gibi özellikler bulunur.*
+Angular, HTML, CSS ve JavaScript kullanarak uygulama geliştirmeyi kolaylaştırmak için bir dizi özellik ve bileşenler sağlar. Bu özellikler arasında veri bağlama (data binding), dependency injection, routing, form kontrolü ve animasyonlar gibi özellikler bulunur.
 
-Angular, büyük ve karmaşık uygulamaların geliştirilmesi için uygun bir araçtır ve geliştiricilerin üretkenliğini artırmak için birçok araç sağlar.*
+Angular, büyük ve karmaşık uygulamaların geliştirilmesi için uygun bir araçtır ve geliştiricilerin üretkenliğini artırmak için birçok araç sağlar.
 
 # *Angular’ ın Avantajları ve Dezavantajları Nelerdir?*
 
@@ -30,11 +30,11 @@ Angular, büyük ve karmaşık uygulamaların geliştirilmesi için uygun bir ar
 
 # *Single Page Application Nedir?*
 
-Single Page Application (SPA), bir web uygulaması tipidir. Kullanıcıların sayfalar arasında gezinmesine gerek kalmadan, tek bir sayfa içerisinde uygulamanın tüm fonksiyonlarına erişmesini sağlar.*
+Single Page Application (SPA), bir web uygulaması tipidir. Kullanıcıların sayfalar arasında gezinmesine gerek kalmadan, tek bir sayfa içerisinde uygulamanın tüm fonksiyonlarına erişmesini sağlar.
 
-SPA, geleneksel çok sayfalı web uygulamalarına göre daha hızlı ve kullanımı daha kolaydır. SPA'lar, kullanıcı tarafından yapılan etkileşimler sonucunda sadece gerekli olan verileri veya bileşenleri yükleyerek sayfa yenilemesine gerek kalmadan içeriklerin güncellenmesini sağlar.*
+SPA, geleneksel çok sayfalı web uygulamalarına göre daha hızlı ve kullanımı daha kolaydır. SPA'lar, kullanıcı tarafından yapılan etkileşimler sonucunda sadece gerekli olan verileri veya bileşenleri yükleyerek sayfa yenilemesine gerek kalmadan içeriklerin güncellenmesini sağlar.
 
-SPA'lar genellikle JavaScript framework'leri ile geliştirilir ve bu framework'lerin sağladığı veri bağlama (data binding) ve yönlendirme (routing) özellikleri ile uygulamaların geliştirilmesi kolaylaştırılır.*
+SPA'lar genellikle JavaScript framework'leri ile geliştirilir ve bu framework'lerin sağladığı veri bağlama (data binding) ve yönlendirme (routing) özellikleri ile uygulamaların geliştirilmesi kolaylaştırılır.
 
 *SPA'ların avantajları şunlardır:*
 
@@ -51,13 +51,13 @@ SPA'lar genellikle JavaScript framework'leri ile geliştirilir ve bu framework'l
 
 # *Node.js Nedir?*
 
-Node.js, Chrome V8 JavaScript motoru üzerine kurulmuş bir JavaScript runtime ortamıdır. Node.js, server-side (sunucu tarafı) JavaScript çalıştırabilen açık kaynaklı bir platformdur.*
+Node.js, Chrome V8 JavaScript motoru üzerine kurulmuş bir JavaScript runtime ortamıdır. Node.js, server-side (sunucu tarafı) JavaScript çalıştırabilen açık kaynaklı bir platformdur.
 
-Node.js, JavaScript dilini kullanarak hızlı ve ölçeklenebilir web uygulamaları geliştirilmesine olanak sağlar. Node.js, JavaScript'in yaygın kullanımına olanak sağladığı için, web tarayıcılarındaki JavaScript koduyla benzer bir şekilde çalıştırılabildiği için, sunucu tarafındaki uygulamaları da JavaScript kullanarak geliştirme fırsatı sunar.*
+Node.js, JavaScript dilini kullanarak hızlı ve ölçeklenebilir web uygulamaları geliştirilmesine olanak sağlar. Node.js, JavaScript'in yaygın kullanımına olanak sağladığı için, web tarayıcılarındaki JavaScript koduyla benzer bir şekilde çalıştırılabildiği için, sunucu tarafındaki uygulamaları da JavaScript kullanarak geliştirme fırsatı sunar.
 
-Node.js, asenkron (non-blocking) I/O işlemleri ile çalıştığından, web uygulamalarının hızını arttırır. Ayrıca, Node.js, modüler bir yapıya sahiptir ve özellikle hızlı ve ölçeklenebilir web uygulamaları için tasarlanmıştır.*
+Node.js, asenkron (non-blocking) I/O işlemleri ile çalıştığından, web uygulamalarının hızını arttırır. Ayrıca, Node.js, modüler bir yapıya sahiptir ve özellikle hızlı ve ölçeklenebilir web uygulamaları için tasarlanmıştır.
 
-Node.js, birçok farklı alanda kullanılmaktadır. Örneğin, web uygulamaları, arka uç uygulamaları, oyun sunucuları, akışlı uygulamalar, API'ler ve IoT (Nesnelerin İnterneti) cihazları için kullanılabilir.*
+Node.js, birçok farklı alanda kullanılmaktadır. Örneğin, web uygulamaları, arka uç uygulamaları, oyun sunucuları, akışlı uygulamalar, API'ler ve IoT (Nesnelerin İnterneti) cihazları için kullanılabilir.
 
 *Node.js'in avantajları şunlardır:*
 
@@ -75,19 +75,19 @@ Node.js, birçok farklı alanda kullanılmaktadır. Örneğin, web uygulamaları
 
 # *Angular CLI Nedir?*
 
-Angular CLI (Command Line Interface), Angular uygulamaları için bir komut satırı arayüzüdür. Angular CLI, Angular uygulamalarının hızlı bir şekilde oluşturulmasını, yapılandırılmasını ve dağıtılmasını kolaylaştırır. Bu araç, kullanıcıların Angular uygulamalarını sıfırdan başlatmak yerine hazır bir şablon kullanarak hızlı bir şekilde oluşturmasına olanak sağlar.*
+Angular CLI (Command Line Interface), Angular uygulamaları için bir komut satırı arayüzüdür. Angular CLI, Angular uygulamalarının hızlı bir şekilde oluşturulmasını, yapılandırılmasını ve dağıtılmasını kolaylaştırır. Bu araç, kullanıcıların Angular uygulamalarını sıfırdan başlatmak yerine hazır bir şablon kullanarak hızlı bir şekilde oluşturmasına olanak sağlar.
 
-Angular CLI, kullanıcıların Angular projesi için birçok işlemi otomatikleştirmesine olanak sağlar. Bu işlemler arasında, proje yapısının oluşturulması, dosya oluşturulması, paketlerin yüklenmesi, testlerin çalıştırılması, uygulamanın derlenmesi ve uygulamanın sunucuya yüklenmesi gibi işlemler bulunur.*
+Angular CLI, kullanıcıların Angular projesi için birçok işlemi otomatikleştirmesine olanak sağlar. Bu işlemler arasında, proje yapısının oluşturulması, dosya oluşturulması, paketlerin yüklenmesi, testlerin çalıştırılması, uygulamanın derlenmesi ve uygulamanın sunucuya yüklenmesi gibi işlemler bulunur.
 
-Angular CLI ayrıca, Angular uygulamalarını oluşturmak ve yönetmek için kullanılan birçok komut sunar. Örneğin, "ng new" komutu yeni bir Angular projesi oluştururken, "ng serve" komutu geliştirme sunucusunu başlatır. "ng test" komutu, Angular uygulaması için testleri çalıştırmak için kullanılır.*
+Angular CLI ayrıca, Angular uygulamalarını oluşturmak ve yönetmek için kullanılan birçok komut sunar. Örneğin, "ng new" komutu yeni bir Angular projesi oluştururken, "ng serve" komutu geliştirme sunucusunu başlatır. "ng test" komutu, Angular uygulaması için testleri çalıştırmak için kullanılır.
 
-Angular CLI, Angular uygulamalarının geliştirilmesi ve yönetilmesinde büyük bir kolaylık sağlar. Bu araç, geliştirme sürecinde zaman kazandırır ve uygulamanın yapılandırılması ve dağıtılması işlemlerini daha hızlı ve kolay hale getirir.*
+Angular CLI, Angular uygulamalarının geliştirilmesi ve yönetilmesinde büyük bir kolaylık sağlar. Bu araç, geliştirme sürecinde zaman kazandırır ve uygulamanın yapılandırılması ve dağıtılması işlemlerini daha hızlı ve kolay hale getirir.
 
 # *TypeScript Nedir?*
 
-TypeScript, Microsoft tarafından geliştirilmiş, açık kaynak kodlu bir programlama dilidir. TypeScript, JavaScript dilinin bir üst kümesidir ve JavaScript ile aynı söz dizimi ve yapısına sahiptir. Ancak, TypeScript, JavaScript'in özelliklerine ek olarak, statik tür atamaları, sınıflar, arayüzler ve nesne yönelimli programlama özellikleri gibi bir dizi ek özellik sunar.*
+TypeScript, Microsoft tarafından geliştirilmiş, açık kaynak kodlu bir programlama dilidir. TypeScript, JavaScript dilinin bir üst kümesidir ve JavaScript ile aynı söz dizimi ve yapısına sahiptir. Ancak, TypeScript, JavaScript'in özelliklerine ek olarak, statik tür atamaları, sınıflar, arayüzler ve nesne yönelimli programlama özellikleri gibi bir dizi ek özellik sunar.
 
-TypeScript, JavaScript kodunun okunabilirliğini artırır ve daha büyük ölçekli projelerde daha güvenli ve daha kolay bir kod yazımı sağlar. Bu özellikleri sayesinde, özellikle büyük ekipler tarafından geliştirilen ve ölçeklenebilir projelerde kullanılan web uygulamalarının geliştirilmesinde popüler bir dil haline gelmiştir.*
+TypeScript, JavaScript kodunun okunabilirliğini artırır ve daha büyük ölçekli projelerde daha güvenli ve daha kolay bir kod yazımı sağlar. Bu özellikleri sayesinde, özellikle büyük ekipler tarafından geliştirilen ve ölçeklenebilir projelerde kullanılan web uygulamalarının geliştirilmesinde popüler bir dil haline gelmiştir.
 
 *TypeScript'in avantajları şunlardır:*
 
@@ -120,9 +120,9 @@ interface User {
 }
 ```
 
-Bu arayüz, "User" adlı bir nesne türünü tanımlar. Bu nesne, "id", "name" ve "email" adlı zorunlu özelliklere sahiptir ve "age" adlı isteğe bağlı bir özellik içerebilir.*
+Bu arayüz, "User" adlı bir nesne türünü tanımlar. Bu nesne, "id", "name" ve "email" adlı zorunlu özelliklere sahiptir ve "age" adlı isteğe bağlı bir özellik içerebilir.
 
-Bu arayüz, bir bileşen veya hizmet tarafından kullanılabilir. Örneğin, aşağıdaki örnek bileşen, "User" arayüzünü kullanarak bir kullanıcı listesini görüntüler:*
+Bu arayüz, bir bileşen veya hizmet tarafından kullanılabilir. Örneğin, aşağıdaki örnek bileşen, "User" arayüzünü kullanarak bir kullanıcı listesini görüntüler:
 
 ```jsx
 import { Component } from '@angular/core';
@@ -146,15 +146,15 @@ export class UserListComponent {
 }
 ```
 
-        *Bu bileşen, "User" arayüzü ile tanımlanmış bir "users" özelliğine sahiptir. Bu özellik, "User" türünde bir dizi nesne içerir ve bileşen tarafından kullanılabilir.*
+Bu bileşen, "User" arayüzü ile tanımlanmış bir "users" özelliğine sahiptir. Bu özellik, "User" türünde bir dizi nesne içerir ve bileşen tarafından kullanılabilir.
 
-        *Arayüzlerin kullanımı, Angular uygulamalarının yapılandırılmasına yardımcı olur ve özellikle büyük ölçekli projelerde kodun okunabilirliğini ve yeniden kullanılabilirliğini artırır.*
+Arayüzlerin kullanımı, Angular uygulamalarının yapılandırılmasına yardımcı olur ve özellikle büyük ölçekli projelerde kodun okunabilirliğini ve yeniden kullanılabilirliğini artırır.
 
 # *Component Nedir?*
 
-        Component, Angular framework'ünde bir web bileşenidir. Bir bileşen, bir web sayfasındaki belirli bir parçayı temsil eder ve HTML şablonu, CSS stilleri ve TypeScript kodu içerir.
+Component, Angular framework'ünde bir web bileşenidir. Bir bileşen, bir web sayfasındaki belirli bir parçayı temsil eder ve HTML şablonu, CSS stilleri ve TypeScript kodu içerir.
 
-        Angular uygulamaları, birçok bileşenin bir araya gelmesiyle oluşturulur. Bu bileşenler, uygulamanın farklı bölümlerini temsil eder ve birbirleriyle etkileşimde bulunabilirler.
+Angular uygulamaları, birçok bileşenin bir araya gelmesiyle oluşturulur. Bu bileşenler, uygulamanın farklı bölümlerini temsil eder ve birbirleriyle etkileşimde bulunabilirler.
 
 Bir bileşenin temel öğeleri şunlardır:
 
@@ -167,19 +167,19 @@ Bir bileşenin temel öğeleri şunlardır:
 
 # *Module ve Component İlişkisi*
 
-        *Module ve Component arasında sıkı bir ilişki vardır. Angular uygulamaları, bir veya daha fazla modül ve bu modüllerdeki birçok bileşenin bir araya gelmesiyle oluşturulur.*
+Module ve Component arasında sıkı bir ilişki vardır. Angular uygulamaları, bir veya daha fazla modül ve bu modüllerdeki birçok bileşenin bir araya gelmesiyle oluşturulur.
 
-        *Modüller, Angular uygulamalarında bir işlevselliği paketlemek için kullanılır. Bir modül, işlevsel birimlerin bir araya getirilmesiyle oluşur ve uygulamanın farklı bölümlerini temsil edebilir. Modüller, bir uygulamanın parçalarını mantıksal gruplar halinde düzenler ve uygulamanın genel yapısını sağlar.*
+Modüller, Angular uygulamalarında bir işlevselliği paketlemek için kullanılır. Bir modül, işlevsel birimlerin bir araya getirilmesiyle oluşur ve uygulamanın farklı bölümlerini temsil edebilir. Modüller, bir uygulamanın parçalarını mantıksal gruplar halinde düzenler ve uygulamanın genel yapısını sağlar.
 
-        *Bir modülün içinde, bileşenler ve diğer servisler gibi farklı türlerdeki öğeler yer alabilir. Bu bileşenler, modüle özgüdür ve modülün dışındaki bileşenlerden farklı olarak, sadece modül içinde kullanılabilirler.*
+Bir modülün içinde, bileşenler ve diğer servisler gibi farklı türlerdeki öğeler yer alabilir. Bu bileşenler, modüle özgüdür ve modülün dışındaki bileşenlerden farklı olarak, sadece modül içinde kullanılabilirler.
 
-        *Bir bileşen ise, bir web sayfasındaki belirli bir parçayı temsil eder ve bir modülün içinde yer alabilir. Bir bileşenin özellikleri, modülün özelliklerini kullanabilir ve modül içindeki diğer bileşenlerle etkileşimde bulunabilir.*
+Bir bileşen ise, bir web sayfasındaki belirli bir parçayı temsil eder ve bir modülün içinde yer alabilir. Bir bileşenin özellikleri, modülün özelliklerini kullanabilir ve modül içindeki diğer bileşenlerle etkileşimde bulunabilir.
 
-        *Bir modül, bileşenlerin gruplandırılmasına ve uygulamanın yönetimine yardımcı olurken, bileşenler, uygulamanın temel yapı taşlarıdır ve uygulamanın görsel tasarımını ve işlevselliğini belirler. Bileşenler, bir web sayfasındaki belirli bir parçayı temsil ederken, modüller uygulamanın farklı bölümlerini temsil eder ve uygulamanın yapısını oluşturur.*
+Bir modül, bileşenlerin gruplandırılmasına ve uygulamanın yönetimine yardımcı olurken, bileşenler, uygulamanın temel yapı taşlarıdır ve uygulamanın görsel tasarımını ve işlevselliğini belirler. Bileşenler, bir web sayfasındaki belirli bir parçayı temsil ederken, modüller uygulamanın farklı bölümlerini temsil eder ve uygulamanın yapısını oluşturur.
 
 # *Component LifeCycle Hooks Nedir?*
 
-        *Angular'da Component LifeCycle Hooks, bir bileşenin hayat döngüsünü kontrol etmek ve bileşenin farklı aşamalarında işlem yapmak için kullanılan yöntemlerdir. Bileşenin oluşturulması, güncellenmesi veya yok edilmesi gibi durumlarda, Angular, belirli bir sırayla, bileşenin hayat döngüsü kancalarını çalıştırır.*
+Angular'da Component LifeCycle Hooks, bir bileşenin hayat döngüsünü kontrol etmek ve bileşenin farklı aşamalarında işlem yapmak için kullanılan yöntemlerdir. Bileşenin oluşturulması, güncellenmesi veya yok edilmesi gibi durumlarda, Angular, belirli bir sırayla, bileşenin hayat döngüsü kancalarını çalıştırır.
 
 *Angular'da bir bileşenin hayat döngüsü şu adımlardan oluşur:*
 
@@ -192,7 +192,7 @@ Bir bileşenin temel öğeleri şunlardır:
 7. ***ngAfterViewChecked()**: Bileşenin görüntüleme özellikleri değiştirildiğinde veya güncellendiğinde çağrılır. Bu yöntem, bileşenin görüntüleme özellikleri hazır olduğunda her değişiklikte çalışır.*
 8. ***ngOnDestroy()**: Bileşen yok edildiğinde çağrılır. Bu yöntem, bileşenin hafızadan silinmeden önce temizlenmesi için kullanılır.*
 
-        *Bu LifeCycle Hooks yöntemleri, bir bileşenin hayat döngüsünü kontrol etmek ve bileşenin farklı aşamalarında işlem yapmak için kullanılır. Bu yöntemler, bileşenlerin verilerini dinamik olarak değiştirmek, bileşenin görüntüsünü güncellemek ve hafızayı temizlemek için kullanılabilir.*
+Bu LifeCycle Hooks yöntemleri, bir bileşenin hayat döngüsünü kontrol etmek ve bileşenin farklı aşamalarında işlem yapmak için kullanılır. Bu yöntemler, bileşenlerin verilerini dinamik olarak değiştirmek, bileşenin görüntüsünü güncellemek ve hafızayı temizlemek için kullanılabilir.
 
 # *Component’ e Dışarıdan Nasıl Veri Taşınır?*
 
