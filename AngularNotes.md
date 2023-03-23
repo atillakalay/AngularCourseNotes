@@ -446,3 +446,297 @@ export class AppModule { }
 *Yukarıdaki örnekte, **`myCustomDirective`** direktifi, **`<p>`** öğesine uygulanır. Bu, **`MyCustomDirective`** sınıfındaki özellikleri çalıştırarak öğenin arka plan rengini sarıya dönüştürür.*
 
 *Bu şekilde bir custom directive oluşturarak, özel bir işlevsellik ekleyebilirsiniz. Directive, HTML elementlerine bir davranış ekleyerek, daha önce yapmadığı işleri yapabilir.*
+
+# *Pipe Nedir?*
+
+*Angular'da bir pipe, verileri değiştirmek veya düzenlemek için kullanılan bir araçtır. Bir veri dönüştürücüsü olarak da adlandırılan pipe, bir değeri alır ve işlemler yaparak başka bir değer döndürür. Pipe'lar, birçok veri türüne ve farklı veri formatlarına uygulanabilir.*
+
+*Angular, bazı yerleşik pipe'lar sağlar. Bunlar, sıklıkla kullanılan veri dönüştürme işlemleri için hazır fonksiyonlar sağlar. Örneğin, **`uppercase`** ve **`lowercase`** pipe'ları, bir metin değerini büyük harfe veya küçük harfe dönüştürmek için kullanılır.*
+
+*Ayrıca, Angular, özel pipe'lar oluşturmanıza da izin verir. Örneğin, bir tarih değerini belirli bir biçimde göstermek veya bir sayıyı belirli bir formatta biçimlendirmek için özel bir pipe yazabilirsiniz.*
+
+*Pipe'lar, Angular bileşenlerinde veya direktiflerinde kullanılabilir. Pipe'ları kullanmak için, **`|`** (boru) işareti kullanarak belirtilen bir değişkenin değerine uygulanır. Örneğin:*
+
+```jsx
+{{ name | uppercase }}
+```
+
+*Yukarıdaki örnekte, **`name`** değişkeninin değeri, **`uppercase`** pipe'ı kullanılarak büyük harflere dönüştürülür.*
+
+*Angular'da kullanılabilen bazı yerleşik pipe'lar şunlardır:*
+
+- **`*uppercase`**: Metin değerini büyük harfe dönüştürür.*
+- **`*lowercase`**: Metin değerini küçük harfe dönüştürür.*
+- **`*date`**: Tarih değerini belirli bir formatta gösterir.*
+- **`*currency`**: Sayı değerini belirli bir para birimi formatında gösterir.*
+- **`*json`**: Nesne değerini JSON formatında gösterir.*
+
+*Pipe'lar, verileri dönüştürmek veya düzenlemek için güçlü bir araçtır. Kendi özel pipe'larınızı yazarak, verilerinizi daha okunaklı ve kullanılabilir hale getirebilirsiniz.*
+
+# *Pipe Türleri Nelerdir?*
+
+*Angular'da, farklı veri türleri ve kullanım senaryoları için birçok farklı pipe türü vardır. Bunlar arasında:*
+
+1. *Pure Pipe: Bu tür bir pipe, girdi değerleri değiştiğinde çalışan bir fonksiyon içerir. Yani, girdi değeri değiştiğinde, pipe'ın yalnızca etkilenen bileşenleri yeniden işlemesi gerekir. Örneğin, bir sayı veya tarih değerini biçimlendirmek için kullanılan **`DatePipe`** veya **`CurrencyPipe`** gibi yerleşik pipe'lar, saf bir pipe örneğidir.*
+2. *Impure Pipe: Bu tür bir pipe, bileşenin tamamı yeniden işleme gerektiren, kapsamlı bir hesaplama işlemi içerir. Impure pipe'lar, bileşenin yeniden işlenmesi gerektiğinde her zaman çalışır ve bu nedenle performans açısından daha düşük bir seçenektir. Ancak, bazı durumlarda, girdi değerlerinde sürekli değişiklikler olduğunda veya kompleks bir hesaplama işlemi yapılması gerektiğinde kullanışlı olabilir.*
+3. *Async Pipe: Bu tür bir pipe, bir Observable veya Promise gibi asenkron bir değeri göstermek için kullanılır. Async pipe, abone olduğu veriyi otomatik olarak yönetir ve güncelleme işlemlerini gerçekleştirir.*
+4. *Custom Pipe: Bu tür bir pipe, özelleştirilmiş bir işlevsellik sağlamak için kullanıcı tarafından oluşturulur. Kendi özel pipe'larınızı yazarak, verileri belirli bir biçimde göstermek veya düzenlemek için ihtiyacınız olan özel işlemleri gerçekleştirebilirsiniz.*
+
+*Bu pipe türleri, Angular'da veri dönüştürme işlemlerini gerçekleştirmek için kullanılabilir ve her biri belirli bir senaryo veya veri türü için daha uygun olabilir.*
+
+# *Custom Nasıl Pipe Yazılır?*
+
+*Angular'da custom pipe yazmak oldukça kolaydır. Aşağıdaki adımları izleyerek kendi custom pipe'ınızı yazabilirsiniz:*
+
+1. *Yeni bir pipe oluşturun: Yeni bir pipe oluşturmak için Angular CLI aracını kullanabilirsiniz. Komut istemcisinde **`ng generate pipe`** komutunu çalıştırarak yeni bir pipe oluşturabilirsiniz. Örneğin, **`ng generate pipe myCustomPipe`** komutu ile **`myCustomPipe`** adında yeni bir pipe oluşturabilirsiniz.*
+2. *Pipe sınıfını oluşturun: Yeni bir pipe oluşturduktan sonra, pipe sınıfınızı **`@Pipe`** dekoratörü ile işaretleyin. Bu dekoratör, pipe'ın adını belirlemenizi ve hangi modüle dahil edileceğini tanımlamanızı sağlar. Ayrıca **`PipeTransform`** arayüzünü de uygulamanız gerekir.*
+
+```jsx
+*import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'myCustomPipe'
+})
+export class MyCustomPipe implements PipeTransform {
+  transform(value: any, arg1: any, arg2: any): any {
+    // Pipe işlemlerini burada gerçekleştirin
+  }
+}*
+```
+
+1. *Pipe işlevselliğini yazın: **`PipeTransform`** arayüzü, transform() adında tek bir yöntem içerir. Bu yöntem, pipe'ın verileri nasıl dönüştüreceğini belirtir. Yani, burada custom pipe'ınızın gerçek işlemlerini gerçekleştirirsiniz.*
+
+```jsx
+*transform(value: any, arg1: any, arg2: any): any {
+  // value, pipe'a gelen veridir
+  // arg1, pipe'a verilen ilk parametredir
+  // arg2, pipe'a verilen ikinci parametredir
+
+  // pipe işlemleri burada gerçekleştirilir
+  // işlemler sonucu oluşan veri döndürülür
+}*
+```
+
+1.  *Pipe'i kullanın: Pipe'ınızı kullanmak için, bileşen dosyanızda veya HTML dosyanızda pipe adını kullanarak boru (|) sembolü ile birlikte belirtmeniz yeterlidir. Örneğin:*
+
+```jsx
+*<!-- Pipe, {{}} ifadesi içinde kullanılabilir -->
+{{ myData | myCustomPipe: arg1: arg2 }}
+
+<!-- Pipe, direktif parametrelerinde kullanılabilir -->
+<div [ngClass]="{ 'my-class': myData | myCustomPipe: arg1: arg2 }"></div>*
+```
+
+*Yukarıdaki adımları izleyerek, Angular'da kendi özelleştirilmiş pipe'ınızı yazabilirsiniz. Bu, verileri özelleştirilmiş bir şekilde işlemek için kullanışlı bir araçtır ve özellikle birden çok bileşende aynı işlemleri gerçekleştirmek istediğinizde faydalıdır.*
+
+# *Template Driven Nedir?*
+
+*Template Driven, Angular'da bir form yaklaşımıdır. Bu yaklaşımda, formun mantıksal işlevleri component dosyasında değil, HTML template'ında tanımlanır. Bu nedenle, form oluşturma süreci daha hızlı ve basittir.*
+
+*Template Driven yaklaşımı, form elemanlarına doğrudan ngModel direktifi atanarak veri bağlama (data binding) yapılmasına izin verir. Form elemanlarının geçerliliği (validity) otomatik olarak kontrol edilir ve gösterilir. Bu yaklaşımın avantajlarından biri, HTML tarafında yapılandırmanın basit olmasıdır.*
+
+*Ancak, büyük projelerde Template Driven yaklaşımı yerine Reactive Forms yaklaşımının kullanılması tavsiye edilir. Reactive Forms, form mantığının tamamen TypeScript tarafında kontrol edildiği ve form elemanlarının daha kolay test edildiği bir yaklaşımdır.*
+
+# *Reactive Form Nedir?*
+
+*Reactive Forms, Angular'da bir form yaklaşımıdır. Bu yaklaşımda, form elemanları ve işlevleri component dosyasında TypeScript koduyla kontrol edilir. Reactive Forms, Template Driven yaklaşımına göre daha özelleştirilebilir ve ölçeklenebilirdir.*
+
+*Reactive Forms, FormBuilder sınıfı yardımıyla formun kontrolünün tamamen component dosyasında yapılmasına izin verir. Form elemanları ve özellikleri, FormGroup ve FormControl nesneleri aracılığıyla yönetilir. Form elemanlarına doğrudan ngModel direktifi atanması yerine, FormControl nesneleri ile veri bağlama (data binding) yapılır.*
+
+*Reactive Forms, form elemanlarının daha iyi test edilmesine izin verir ve form elemanlarına yapılan işlemler TypeScript koduyla daha kolay takip edilebilir. Reactive Forms'un dezavantajlarından biri, HTML template tarafında yapılandırmanın daha karmaşık olmasıdır. Ancak, büyük projelerde Reactive Forms'un Template Driven yaklaşıma göre daha avantajlı olduğu düşünülmektedir.*
+
+# *Service Nedir?*
+
+*Service, Angular uygulamalarında, componentler arasında paylaşılan verilerin, fonksiyonların ve işlemlerin tutulduğu ve sağlandığı bir sınıftır.*
+
+*Service sınıfları, bir iş mantığını veya API çağrılarını gerçekleştirmek, verileri depolamak ve paylaşmak, tarih formatlama gibi işlemleri yapmak için kullanılabilirler. Service sınıfları, Angular'ın dependency injection (bağımlılık enjeksiyonu) mekanizması ile çalışır ve bu sayede componentler arasında veri paylaşımı sağlanır.*
+
+*Service'ler, componentlerin kendi özelliklerinden bağımsızdır ve birden fazla component tarafından kullanılabilirler. Bu nedenle, bir veri kaynağına erişmeniz gerektiğinde, tüm componentlerin aynı veri kaynağına erişmesini sağlayacak bir service oluşturabilirsiniz.*
+
+*Angular, genellikle RESTful servisler üzerinde çalıştığından, HTTPClient gibi Angular servislerini kullanarak bir API ile veri etkileşimlerini gerçekleştirmek yaygındır.*
+
+# *Module Provider Nedir?*
+
+*Module Provider, Angular uygulamalarında, dependency injection (bağımlılık enjeksiyonu) mekanizmasının kullanılması için gereken servis, değer veya farklı bir bağımlılık türünün sağlandığı bir yapıdır.*
+
+*Module Provider, bir NgModule içinde yer alır ve özellikle module'ün dışındaki bir dependency'in NgModule'e sağlanması gerektiğinde kullanılır. NgModule içinde bir provider tanımlandığında, dependency injection ile tüm uygulama genelinde bu servis kullanılabilir hale gelir.*
+
+*Module Provider, bir servisin nasıl sağlandığını belirlemek için kullanılan Injectable decorator'ı kullanır. Bu sayede Angular'ın dependency injection mekanizması, servis sağlayıcılarının ne zaman ve nasıl sağlanacağını bilir.*
+
+*Örneğin, bir RESTful API'ya HTTP istekleri gönderen bir servisi kullanmak istiyorsak, bu servisi sağlayacak bir HTTPClientModule sağlayıcısı ekleyerek, uygulamanın tümünde bu servisi kullanabilir hale getirebiliriz.*
+
+# *Module Nedir?*
+
+*Module, Angular uygulamalarında, componentler, directive'ler, pipe'lar, servisler ve diğer NgModule'ler gibi birçok yapıyı bir araya getiren bir yapıdır. NgModule, Angular'ın modüler mimarisinin temelini oluşturur.*
+
+*Module'ler, uygulamanın modüler bir şekilde tasarlanmasına yardımcı olurlar ve uygulama componentleri arasında veri paylaşımını sağlarlar. Her Angular uygulaması, en az bir AppModule (Root Module) içermelidir. Root module, uygulama genelinde kullanılacak componentler, directive'ler, pipe'lar ve servisler gibi yapıları tanımlayan NgModule'dir.*
+
+*Module'ler, birbirleri ile ilişkili olan componentler, directive'ler, pipe'lar ve servisleri gruplamak için kullanılırlar. Bu sayede, uygulamanın belli bir bölümü için gereken yapılar tek bir NgModule içinde tanımlanabilir. Böylece, uygulamanın farklı bölümlerinde aynı yapıları farklı NgModule'lerde tekrar tekrar tanımlamak yerine, bu yapıları bir kez tanımlayarak tüm uygulama boyunca kullanılabilir hale getirebiliriz.*
+
+*NgModule'ler, Angular uygulamalarında dependency injection (bağımlılık enjeksiyonu) mekanizmasını da sağlarlar. Yani, herhangi bir yapıyı (component, directive, pipe, servis vb.) herhangi bir yerde kullanmak istediğimizde, NgModule içindeki provider'ları kullanarak bu yapıları dependency injection ile sağlayabiliriz.*
+
+# *Module Nasıl Oluşturulur?*
+
+*Angular uygulamalarında, bir module oluşturmak için öncelikle **`@NgModule()`** dekoratörünü kullanmamız gerekiyor. Bu dekoratör, module için gerekli olan metadata'ları sağlar.*
+
+*Module oluşturmak için öncelikle, CLI(Command Line Interface) aracını kullanarak aşağıdaki komutu çalıştırabilirsiniz:*
+
+```jsx
+ng generate module <module-name>
+```
+
+*Bu komutla birlikte, Angular CLI size yeni bir module dosyası ve bu dosyayı içe aktarabileceğiniz bir dosya da oluşturacaktır.*
+
+*Module dosyası içinde ise, **`@NgModule()`** dekoratörü ile tanımlanan metadata'ları sağlamalısınız. Bu metadata'lar arasında, module içinde kullanılacak componentler, directive'ler, pipe'lar, servisler ve diğer NgModule'ler gibi yapılar yer alır.*
+
+*Aşağıda, basit bir örnek olarak yeni bir module oluşturmayı gösterebilirim:*
+
+```jsx
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MyComponent } from './my.component';
+
+@NgModule({
+  declarations: [
+    MyComponent
+  ],
+  imports: [
+    CommonModule
+  ],
+  exports: [
+    MyComponent
+  ]
+})
+export class MyModule { }
+```
+
+*Yukarıdaki örnekte, **`MyModule`** adında bir module oluşturduk. Bu module, **`MyComponent`** adında bir component içeriyor. **`CommonModule`** ise Angular tarafından sağlanan bir module'dur ve bazı temel direktivleri içerir. **`exports`** array'i ile de module içinde yer alan componentlerin veya diğer yapıların dışarıya aktarılmasını sağlayabiliriz. Bu sayede, bu module'ü kullanan diğer componentler veya module'ler, bu yapıları kullanabilirler.*
+
+# *Routing Nedir?*
+
+*Angular uygulamalarında, routing (yönlendirme) yapısı, kullanıcının URL adreslerine göre farklı componentlerin görüntülenmesini sağlar. Bu sayede, farklı sayfaların veya farklı bileşenlerin kullanıcıya gösterilmesi mümkün hale gelir.*
+
+*Angular, routing yapısı için **`@angular/router`** modülünü sağlar. Bu modül ile birlikte, **`Routes`** ve **`RouterModule`** sınıflarını kullanarak routing işlemleri gerçekleştirilir.*
+
+**`*Routes`** sınıfı, uygulama içinde yönlendirme yapısı için kullanılacak olan URL adreslerini ve bu adreslere karşılık gelen componentleri tanımlamak için kullanılır. **`RouterModule`** sınıfı ise, uygulama modülü içinde yönlendirme yapısı için gerekli olan özellikleri sağlar.*
+
+*Routing yapısı, örneğin bir web sayfasındaki menü seçenekleri ile sağlanabilir. Menüdeki her bir seçenek, farklı bir URL adresi ile ilişkilendirilir ve bu adreslere göre farklı componentler görüntülenir.*
+
+*Aşağıda, örnek bir routing yapısı tanımlanmıştır:*
+
+```jsx
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+import { HomeComponent } from './home.component';
+import { AboutComponent } from './about.component';
+import { ContactComponent } from './contact.component';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+
+*Yukarıdaki örnekte, **`Routes`** sınıfı kullanılarak üç farklı URL adresi ve bu adreslere karşılık gelen componentler tanımlanmıştır: **`/`** adresi için **`HomeComponent`**, **`/about`** adresi için **`AboutComponent`**, **`/contact`** adresi için ise **`ContactComponent`**.*
+
+*Daha sonra, **`AppRoutingModule`** adında bir modül oluşturarak, **`RouterModule.forRoot()`** metodunu kullanarak tanımlanan routes değişkenini içeri aktarabiliriz. Bu sayede, uygulama içinde yönlendirme işlemleri için gerekli olan ayarlar sağlanmış olur.*
+
+*Routing yapısı, ayrıca URL adreslerinde yer alan parametreler ve query string'ler gibi dinamik verilerin de kullanılabilmesini sağlar. Bu sayede, farklı verileri aynı component içinde kullanarak daha dinamik uygulamalar oluşturmak mümkün hale gelir.*
+
+# *RxJS Nedir?*
+
+*RxJS, Reactive Extensions for JavaScript' in kısaltmasıdır. Bu, reaktif programlama kavramlarına dayalı olarak geliştirilmiş bir JavaScript kütüphanesidir. Reactive programming, verilerin asenkron olarak işlenmesine odaklanır ve bu veriler üzerinde işlem yapmak için birçok farklı operatör sağlar.*
+
+*RxJS, bir dizi observable nesnesi üzerinde çalışarak, yani nesneler arasındaki bir etkileşim olduğunda, bu etkileşimleri ele almak için tasarlanmıştır. Bu nesneler, gelecekte oluşacak olan etkileşimleri temsil ederler ve herhangi bir zamanda işlem yapmak üzere abone olunabilirler.*
+
+*RxJS, web uygulamalarında asenkron veri işleme işlemlerini yönetmek için çok yararlıdır. Bu kütüphane sayesinde, HTTP isteklerinin sonuçları, kullanıcı etkileşimleri veya zamanla değişen veriler gibi asenkron verileri işleyebilirsiniz. Ayrıca, RxJS, Angular gibi modern web çerçeveleri ve kütüphaneleri ile birlikte kullanıldığında, veri akışını daha kolay yönetmenize ve uygulamanızın performansını artırmanıza yardımcı olur.*
+
+# *Observable Nesne Nedir?*
+
+*Observable, asenkron verilerin yayınlanmasını temsil eden bir nesnedir. Bu nesne, olası bir etkileşim olan bir veri akışını temsil eder ve bu veri akışı, bir veya daha fazla değer yayınlayabilir.*
+
+*Observable, bir dizi operatör kullanarak bu veri akışlarını manipüle edebilir. Örneğin, bir Observable nesnesi, map() operatörü kullanılarak bir veri akışındaki her bir değeri dönüştürebilir veya filter() operatörü kullanılarak belirli bir kritere uyan değerler filtrelenerek yeni bir veri akışı oluşturulabilir.*
+
+*Observable nesnesi, bir veya daha fazla abone işlevi tarafından dinlenebilir. Bu abone işlevleri, Observable nesnesindeki her bir değeri veya bir hata mesajını veya Observable nesnesinin tamamlandığını alma yeteneğine sahiptir. Abone işlevi, Observable nesnesindeki değişiklikleri takip ederek, veri akışını dinamik olarak yönetmenize olanak tanır.*
+
+*Observable, RxJS kütüphanesi gibi reaktif programlama kütüphanelerinde sıklıkla kullanılır ve modern web uygulamalarında, özellikle Angular gibi web çerçeveleri ve kütüphanelerinde kullanılır.*
+
+# *Creation Operators Nedir Türleri Nelerdir?*
+
+*RxJS, Observable nesnelerinin oluşturulması için bir dizi yararlı işlev içerir. Bu işlevlere Creation Operators denir ve Observable nesnesini oluşturmanın farklı yollarını sunar. Creation Operators, Observable nesnesinin verileri nasıl üreteceğini belirleyen işlevlerdir. Bazı Creation Operators türleri şunlardır:*
+
+1. ***of():** Belirtilen bir dizi veya değer kümesini içeren bir Observable nesnesi oluşturur.*
+2. ***from():** Bir dizi, bir promise, bir iterable, bir Observable nesnesi veya başka bir kaynaktan bir Observable nesnesi oluşturur.*
+3. ***interval():** Belirli bir zaman aralığı içinde tekrar eden bir Observable nesnesi oluşturur.*
+4. ***timer():** Belirli bir gecikme süresi sonrasında bir değer veya değer kümesi yayınlayan bir Observable nesnesi oluşturur.*
+5. ***defer():** Abone işlevi her çağrıldığında Observable nesnesinin oluşturulduğu bir Observable nesnesi oluşturur.*
+6. ***range():** Belirtilen aralıktaki tamsayı değerleri içeren bir Observable nesnesi oluşturur.*
+
+*Bu Creation Operators türleri, Observable nesnelerinin nasıl oluşturulacağına dair sadece birkaç örnektir. RxJS, daha birçok yararlı Creation Operators işlevi sunar.*
+
+# *Filtering Operators Nedir Türleri Nelerdir?*
+
+*RxJS, Observable nesnesindeki verileri filtrelemek için birçok yararlı işlev içerir. Bu işlevlere Filtering Operators denir ve Observable nesnesinin içindeki verileri değiştirmeden, yalnızca belirli koşullara göre filtreleyerek, değiştirerek veya yeniden düzenleyerek çalışır. Bazı Filtering Operators türleri şunlardır:*
+
+1. ***filter():** Belirli bir koşulu karşılayan verileri içeren yeni bir Observable nesnesi oluşturur.*
+2. ***take():** Belirli bir sayıda veri yayınlayan bir Observable nesnesi oluşturur.*
+3. ***skip():** Belirli bir sayıda veri atlama işlemi yapar ve geri kalan verileri içeren yeni bir Observable nesnesi oluşturur.*
+4. ***distinct():** Yayınlanan benzersiz değerleri içeren yeni bir Observable nesnesi oluşturur.*
+5. ***debounceTime():** Belirli bir süre boyunca verileri toplayarak, belirli bir zaman aralığından sonra son veriyi içeren yeni bir Observable nesnesi oluşturur.*
+6. ***throttleTime():** Belirli bir zaman aralığı boyunca belirli bir sayıda veri yayınlayan bir Observable nesnesi oluşturur.*
+
+*Bu Filtering Operators türleri, Observable nesnesindeki verileri nasıl filtreleyeceğinize dair yalnızca birkaç örnektir. RxJS, daha birçok yararlı Filtering Operators işlevi sunar.*
+
+# *Transformation Operators Nedir Türleri Nelerdir?*
+
+*RxJS, Observable nesnesindeki verileri dönüştürmek için birçok yararlı işlev içerir. Bu işlevlere Transformation Operators denir ve Observable nesnesinin içindeki verileri değiştirerek veya yeniden düzenleyerek çalışırlar. Bazı Transformation Operators türleri şunlardır:*
+
+1. ***map():** Observable nesnesindeki her veriyi belirli bir işleme tabi tutarak, yeni bir Observable nesnesi oluşturur.*
+2. ***pluck():** Belirli bir nesne özelliğine erişmek için kullanılır.*
+3. ***mergeMap():** Observable nesnesindeki her veri için yeni bir Observable nesnesi oluşturur ve bu nesneleri birleştirerek tek bir Observable nesnesi oluşturur.*
+4. ***switchMap():** Observable nesnesindeki her veri için yeni bir Observable nesnesi oluşturur ve önceki Observable nesnesini iptal ederek yalnızca en son oluşan nesneyi yayınlar.*
+5. ***reduce():** Observable nesnesindeki tüm verileri tek bir değerde birleştirerek yeni bir Observable nesnesi oluşturur.*
+6. ***scan():** Observable nesnesindeki tüm verileri tek bir değerde birleştirerek, her veri akışı için yeni bir değer yayınlayan yeni bir Observable nesnesi oluşturur.*
+
+*Bu Transformation Operators türleri, Observable nesnesindeki verileri nasıl dönüştüreceğinize dair yalnızca birkaç örnektir. RxJS, daha birçok yararlı Transformation Operators işlevi sunar.*
+
+# *Utility Operators Nedir Türleri Nelerdir?*
+
+*RxJS, Observable nesnesindeki verileri manipüle etmek için kullanabileceğiniz birçok Utility Operators işlevi içerir. Bu işlevler, Observable nesnesinin içindeki verilerin durumunu kontrol etmenize, Observable nesnesinin oluşturma veya sonlandırma davranışını değiştirmenize ve verileri işlemek için ek işlevler eklemenize olanak tanır. Bazı Utility Operators türleri şunlardır:*
+
+1. ***tap():** Observable nesnesindeki her veri akışına ek bir işlem ekler, ancak verileri değiştirmez.*
+2. ***delay():** Observable nesnesinin verilerinin yayınlanmasını belirli bir süre geciktirir.*
+3. ***throttleTime():** Belirli bir süre boyunca, Observable nesnesindeki verilerin sadece belirli bir sıklıkta yayınlanmasını sağlar.*
+4. ***catchError():** Observable nesnesindeki hataları ele alır ve bir hata olduğunda başka bir Observable nesnesi yayınlar.*
+5. ***retry():** Observable nesnesindeki hataları ele alır ve belirli bir sayıda yeniden deneme yapar.*
+6. ***finalize():** Observable nesnesinin sonlandırılmasından önce herhangi bir işlem yapar.*
+
+*Bu Utility Operators türleri, Observable nesnesinin içindeki verileri nasıl manipüle edebileceğinize dair yalnızca birkaç örnektir. RxJS, daha birçok yararlı Utility Operators işlevi sunar.*
+
+# *HttpClient Service Nedir?*
+
+*Angular, HTTP isteklerini yönetmek için HttpClient servisini sağlar. HttpClient servisi, Angular uygulamalarınızda API’lere HTTP isteklerini göndermek ve cevapları almak için kullanılır.*
+
+*HttpClient servisi, Angular uygulamalarında önceden yüklenmiş bir modül olan HttpClientModule modülü aracılığıyla sağlanır. Bu modülü projenize ekledikten sonra, HttpClient servisini kullanmaya başlayabilirsiniz.*
+
+*HttpClient servisi, GET, POST, PUT, DELETE vb. gibi yaygın HTTP isteklerini yönetmek için bir dizi yöntem sunar. Ayrıca, istekleri yapılandırmak için birçok seçenek de sunar. Örneğin, istek başlıkları ekleyebilir, parametreler ayarlayabilir veya cevapları belirli bir veri tipine dönüştürebilirsiniz.*
+
+*HttpClient servisini kullanarak API’lere HTTP istekleri yapmak, Angular uygulamalarının birçok farklı senaryosunda gereklidir. Örneğin, kullanıcının bir formu doldurmasından sonra verileri bir sunucuya kaydetmek veya verileri bir API’den çekmek ve Angular uygulamanızda göstermek için kullanabilirsiniz.*
+
+# *Route Resolver Nedir?*
+
+*Route Resolver, Angular’da yönlendirmeler (routing) sırasında kullanılan bir tekniktir. Angular, bir URL isteği karşılandığında, genellikle ilgili bileşenin yüklenmesi için bir HTTP isteği gönderir. Ancak, bazı durumlarda, bileşenin yüklenmesi için gerekli olan veriler önceden yüklenmelidir. İşte bu noktada Route Resolver devreye girer.*
+
+*Route Resolver, belirli bir URL isteği için gerekli olan verileri önceden yükler ve bunları bir bileşen yüklenmeden önce hazır hale getirir. Bu, kullanıcılara daha hızlı ve pürüzsüz bir deneyim sunar, çünkü bileşen yüklendiğinde gerekli olan veriler zaten mevcuttur.*
+
+*Route Resolver, genellikle Observable öğeleri döndüren bir servis tarafından sağlanır. Bu servis, verileri bir API’den çekebilir veya yerel depolama gibi başka kaynaklardan getirebilir. Resolver, Route ile birlikte tanımlanır ve URL isteği karşılandığında çalışır. Resolver, veriler hazır olduğunda bileşene geçirilir.*
+
+*Route Resolver, Angular uygulamalarının performansını artırmak ve kullanıcıların deneyimini geliştirmek için önemli bir tekniktir. Ancak, doğru şekilde kullanılması önemlidir, çünkü yanlış kullanımı uygulamanın yavaşlamasına ve performans sorunlarına neden olabilir.*
